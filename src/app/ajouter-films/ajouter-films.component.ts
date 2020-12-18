@@ -9,7 +9,7 @@ import { FilmService } from '../film.service';
   styleUrls: ['./ajouter-films.component.css']
 })
 export class AjouterFilmsComponent implements OnInit {
-  
+
   nouveauFilm: FormGroup;
   
   constructor(private filmService : FilmService, private router : Router) { 
@@ -33,5 +33,6 @@ export class AjouterFilmsComponent implements OnInit {
       console.log(this.nouveauFilm.value)
       this.router.navigate([''])
     })
+    
   }
 }
